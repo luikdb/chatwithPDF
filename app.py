@@ -13,7 +13,7 @@ import os
 
 load_dotenv()
 def main():
-    openai_api_key = os.getenv("OPENAI_API_KEY")
+    openai_api_key = st.secrets["OPENAI_API_KEY"]
     st.image("logo.png", width=100)
     st.title("Chat with :red[PDF] :)")
     st.subheader("_by Lui KDB_")
